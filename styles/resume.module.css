@@ -1,0 +1,105 @@
+.main {
+    height:auto;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .header {
+    position: fixed;
+    padding-top: 2PX;
+    background: #5C7890;
+    border-bottom: 1px solid hsla(184, 93%, 47%, 0.822);
+    top: 0;
+    left: 0;
+    color: white;
+    text-align: left;
+    height: 40px;
+    width: 100%;
+    z-index: 4;
+  }
+  .headerURL {
+    padding: 20px;
+    vertical-align: middle;
+    height: 100px;
+  }
+  
+  .headerURL:hover {
+    transition: .5s;
+    padding-left: 24px;
+    vertical-align: middle;
+    background-color: #119aac;
+    border: 1px black;
+  }
+
+  .title {
+    margin: 0;
+    line-height: 1;
+    font-size: 3rem;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 3;
+  }
+
+  .row {
+    flex: 1;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    height: 10px;
+    width: 100%;
+    max-width: 850px ;
+    z-index: 4;
+  }
+  .columnl {
+    display: flex;
+    flex-direction:column;
+    font-size: 1rem;
+    align-items: left;
+    color: black;
+    text-align: left;
+    height: 40px;
+    width: 50%;
+    z-index: 4;
+    vertical-align: middle;
+  }
+  .columnr {
+    display: flex;
+    flex-direction:column;
+    font-size: 1rem;
+    align-items: right;
+    color: black;
+    text-align: right;
+    height: 40px;
+    width: 50%;
+    z-index: 4;
+    vertical-align: middle;
+  }
+  .downloadInst{
+    position:fixed;
+    bottom:10px;
+    background: #119aac;
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+  }

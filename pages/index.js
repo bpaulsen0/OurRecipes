@@ -3,56 +3,36 @@ import styles from '../styles/Home.module.css'
 import React, { useEffect, useState } from 'react';
 
 export default function Home() {
-  const [days, setDays] = useState(0)
-  const [hours, setHours] = useState(0)
-  const [minutes, setMinutes] = useState(0)
-  const [seconds, setSeconds] = useState(0)
-  useEffect(() => {
-    const weddingdate = new Date("06/17/2023 15:00:00");
-    const interval = setInterval(() => {
-      const now = new Date();
-      const difference = weddingdate.getTime() - now.getTime();
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-      setDays(d)
-      const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      setHours(h)
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      setMinutes(m)
-      const s = Math.floor((difference % (1000 * 60)) / (1000));
-      setSeconds(s)
-    }, 1000)
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <div className={styles.container}>
       <Head>
-        <title>Ben and Tias Wedding!</title>
-        <link rel="icon" href="/oie_png.png" />
+        <title>Ben's Website</title>
+        {/* <link rel="icon" href="/oie_png.png" /> */}
       </Head>
-      <img className={styles.decl} src="/CornerDecoration.png"></img>
-      <img className={styles.decr} src="/CornerDecoration.png"></img>
+      {/* <img className={styles.decl} src="/CornerDecoration.png"></img> */}
+      {/* <img className={styles.decr} src="/CornerDecoration.png"></img> */}
       <main className={styles.main}>
-        <div className={styles.background}></div>
-        <div className={styles.masonry}>
+        {/* <div className={styles.background}></div> */}
+        {/* <div className={styles.masonry}>
           <img className={styles.item} src="/DSC_9221.jpg"></img>
           <img className={styles.item} src="/DSC_9254.jpg"></img>
           <img className={styles.item} src="/DSC_8818.jpg"></img>
           <img className={styles.item} src="/DSC_8876.jpg"></img>
           <img className={styles.item} src="/DSC_9099.jpg"></img>
           <img className={styles.item} src="/DSC_9178.jpg"></img>
-        </div>
+        </div> */}
 
         <h1 className={styles.title}>
-          Welcome to <a href='album'>Ben and Tia's</a> Wedding Website!
+          Welcome to my Website!
         </h1>
-        <div className={styles.timer}>
+        {/* <div className={styles.timer}>
           <h1>{days} days {hours} hours {minutes} minutes and {seconds} seconds until the big day!</h1>
-        </div>
+        </div> */}
         <p className={styles.description}>
-          Thank you for checking out our wedding website! If you are planning on attending, kindly fill out the survey where it says RSVP
+          Thank you for checking out my website! Please poke around to get to know me.
         </p>
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a
             href="https://forms.gle/WxpvjU3EmtbboS7A6"
             className={styles.card}
@@ -95,23 +75,36 @@ export default function Home() {
             <h2>Where to Eat &raquo;</h2>
             <p>Try some of our favorite places around town to eat.</p>
           </a>
-        </div>
+        </div> */}
         
       </main>
-      <footer className={styles.footer}>
+      <header className={styles.header}>
         <a
-          className={styles.footerURL}
-          href="https://www.amazon.com/wedding/share/benandtiasweddingregistry"
+          className={styles.headerURL}
+          href="/resume"
         >
-          ⥽Amazon Gift Registry⥼
+          Resume
         </a>
         <a
-          className={styles.footerURL}
-          href="https://www.target.com/gift-registry/gift/ben-and-tias-wedding"
+          className={styles.headerURL}
+          href="/works"
         >
-          ⥽Target Gift Registry⥼
+          Works
         </a>
-      </footer>
+        <a
+          className={styles.headerURL}
+          href="https://github.com/bpaulsen0?tab=repositories"
+          target='_blank' rel='noopener noreferrer'
+        >
+          Repositories
+        </a>
+        <a
+          className={styles.headerURL}
+          href="/personal"
+        >
+          Personal
+        </a>
+      </header>
     </div>
   )
 }

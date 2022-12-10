@@ -11,37 +11,36 @@
   z-index: 1;
 }
 
-.footer {
+.header {
   position: fixed;
   padding-top: 2PX;
   background: #5C7890;
-  border-top: 1px solid hsla(184, 93%, 47%, 0.822);
-  bottom: 0;
+  border-bottom: 1px solid hsla(184, 93%, 47%, 0.822);
+  top: 0;
   left: 0;
   color: white;
-  text-align: center;
+  text-align: left;
   height: 40px;
   width: 100%;
   z-index: 4;
 }
 
-.title a {
+/* .title a {
   color: #436554;
   text-decoration: none;
   text-decoration: underline;
-}
+} */
 
-.timer{
+/* .timer{
   font-size: 1.2rem;
-  /* padding: 10px; */
   text-align: center;
   z-index: 3;
-}
+} */
 
-.title:hover{
+/* .title:hover{
   color: #436554;
-}
-.masonry {
+} */
+/* .masonry {
   position: absolute;
   top: 0px;
   display: flex;
@@ -49,8 +48,8 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-}
-.item {
+} */
+/* .item {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 30%;
@@ -58,29 +57,36 @@
   z-index: 0;
   height: 46vh;
   border-radius: 10px;
-}
+} */
 
-.title a:hover,
-.title a:focus,
-.title a:active {
+.title:hover{
   transition: .5s;
-  color: #5C7890;
+  color: #119aac;
 }
 
-.footerURL {
-  padding-left: 20px;
+.headerURL {
+  padding: 20px;
   vertical-align: middle;
+  height: 100px;
 }
 
-.countdown {
+.headerURL:hover {
+  transition: .5s;
+  padding-left: 24px;
   vertical-align: middle;
+  background-color: #119aac;
+  border: 1px black;
 }
+
+/* .countdown {
+  vertical-align: middle;
+} */
 
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-  color: #436554;
+  color: #1d54cc;
   border-radius: 10px;
   padding: 5px;
   text-align: center;
@@ -99,7 +105,7 @@
   z-index: 3;
 }
 
-.decr {
+/* .decr {
   position:absolute;
   width: 6vh;
   transform: rotateZ(90deg);
@@ -152,7 +158,7 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
-}
+} */
 
 /* 
 Blue  - #7294bc hsla(212,35,59,1)
